@@ -7,3 +7,9 @@ def readData(data1):
 	    for line in data :
 		    x = line.split()
 	return x
+
+# Jawaban
+# --------
+sensor =  ['I', 'and', 'The', 'you']
+tersensor = ['*' * len(kata) if kata in sensor else kata for kata in readData(data1)]
+print(' '.join(tersensor))

@@ -6,4 +6,9 @@ def readData(data1):
 	with open(data1) as data :
 	    for line in data :
 		    x = line.split()
-return x
+	return x
+
+# Jawaban
+# --------
+hasil = [kata for kata in readData(data1) if kata in readData(data2)] # menghasilkan list berisi kata yang sama
+for kata in set(hasil): print(kata, hasil.count(kata)) # output hasil
